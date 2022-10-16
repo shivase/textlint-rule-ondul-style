@@ -1,6 +1,10 @@
 # textlint-rule-ondul-style
 
-オンドゥル語として正しいかのチェック
+テキストがオンドゥル語として正しいものかチェックするプラグインです。 Fix にも対応しているので、 `-fix` を入れてご利用ください。
+
+この textlint plugin は zenn でのプラグイン開発の手順として参考に作ったものになります。
+
+[textlint プラグインの作り方\(例：オンドゥル語変換\) 準備編](https://zenn.dev/shivase/articles/006-how-to-create-new-textlint-plugin-1)
 
 ## Install
 
@@ -22,7 +26,7 @@ Via `.textlintrc`(Recommended)
 
 Via CLI
 
-```
+```bash
 textlint --rule ondul-style README.md
 ```
 
@@ -31,14 +35,14 @@ textlint --rule ondul-style README.md
 Builds source codes for publish to the `lib` folder.
 You can write ES2015+ source codes in `src/` folder.
 
-    npm run build
+    yarn build
 
 ### Tests
 
 Run test code in `test` folder.
 Test textlint rule by [textlint-tester](https://github.com/textlint/textlint-tester).
 
-    npm test
+    yarn test
 
 ## License
 
