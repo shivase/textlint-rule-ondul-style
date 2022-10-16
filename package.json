@@ -12,7 +12,7 @@
     "test": "textlint-scripts test",
     "build": "textlint-scripts build",
     "prebuild": "rimraf lib",
-    "prepublish": "npm run --if-present build",
+    "prepublish": "yarn build",
     "watch": "textlint-scripts build --watch",
     "prepare": "husky install",
     "lint": "run-s lint:*",
